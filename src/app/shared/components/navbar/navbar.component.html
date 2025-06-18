@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-lg navbar-dark theme">
+  <a class="navbar-brand logo" routerLink="">DATABASE</a>
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" aria-controls="navbarSupportedContent" [attr.aria-expanded]="!isCollapsed" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link navLink" routerLinkActive="active" routerLink="empDashboard">Employee Details <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>

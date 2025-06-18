@@ -1,0 +1,30 @@
+.theme {
+  background-color: #000;
+}
+
+.logo {
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+  &:is(:hover, :focus, :active) {
+    color: #ffd044 !important;
+    transform: scale(0.89);
+  }
+}
+
+.navLink {
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
+  &:is(:hover, :focus, :active) {
+    color: #ffd044 !important;
+    font-size: 20px;
+  }
+
+  &.active {
+    color: #f81993 !important;
+    font-size: 16px;
+  }
+}
